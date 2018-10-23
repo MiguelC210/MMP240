@@ -1,0 +1,52 @@
+body{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Pictures/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color:#DAF0EE;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 35px;
+	width: 50%;
+	margin: 0 auto;
+}
+	h1{
+		color: red;
+        font-family: 'Ubuntu Mono', monospace;
+		font-size: 70px;
+	}
+
+	h4{
+		font-family: 'Ubuntu Mono', monospace;
+        color: red;
+        font-size: 55px;
+	}
+	a{
+		color: white;
+	
+		padding: 5px;
+		font-family: 'Kalam', cursive;
+		font-size: 25px;
+
+	}
+		a:hover{
+			border: 1px solid red;
+
+		}
+			nav{
+				float: center;
+				list-style: none;
+				margin-top: 40px;
+			}
+				nav li{
+					display: inline-block;
+				}
+					nav li.active a{
+						border: 1px solid skyblue;
+					}
+						p{
+							font-family: 'Ubuntu Mono', monospace;
+                            color: deepskyblue;
+						}
+							h3{
+								color: deepskyblue;
+								font-family: 'Ubuntu Mono', monospace;
+								font-size: 50px;
+							}

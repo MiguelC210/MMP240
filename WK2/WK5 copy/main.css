@@ -1,0 +1,50 @@
+body{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Pictures/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color:#DAF0EE;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 20px;
+	width: 80%;
+    margin: auto;
+}
+
+ul{
+    margin: 5 5 5 5;
+    padding: 0px;
+    list-style: none;
+}
+
+
+
+nav li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px
+}
+
+nav li a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+}
+
+nav li a:hover{
+    background-color: green;
+}
+
+nav li ul li{
+    display: none;
+}
+
+nav li:hover ul li{
+    display: block;
+}
+
+h1{
+    padding: 60;
+}
