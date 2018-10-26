@@ -1,3 +1,16 @@
+header{
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 80%
+}
+
+article{
+    width: 70%;
+	margin: 0 auto;
+}
+
 body{
 	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Pictures/background.jpg") no-repeat center center fixed;
 	background-size: cover;
@@ -29,7 +42,7 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     display: block;
 }
 
@@ -39,12 +52,23 @@ nav li a:hover{
 
 nav li ul li{
     display: none;
+    
 }
 
 nav li:hover ul li{
     display: block;
+    
 }
 
 h1{
-    padding: 60;
+    font-size: 46px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-family: 'Courgette', cursive;
+    font-size: 26px;
 }
