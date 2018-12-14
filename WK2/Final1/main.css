@@ -13,9 +13,11 @@
 		;
 		grid-gap: 10px; 
 	}
-
     
 }
+    .sidebar{
+	grid-area: side;
+    }
 
 @media screen and (min-width: 2800px){
 
@@ -108,7 +110,7 @@ body{
 
 .featured-image img {
     display: block;
-    width: 100%;
+    width: 85%;
     height: auto;
 }
 

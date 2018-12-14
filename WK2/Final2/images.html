@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Big Room Music Festivals</title>
+      <link rel="stylesheet" href="master.css">
+      <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Montserrat" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="images.html">Images</a></li>
+                              <li><a href="events.html">Events</a></li>
+                              <li><a href="survival.html">Survival Guide</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+    
+   
+
+<div class="pictures">
+    <h2 class="w3-center">Electric Zoo 2018</h2>
+  <img class="mySlides1" src="Pictures/ezoo1.PNG" style="width:50%">
+  <img class="mySlides1" src="Pictures/ezoo2.PNG" style="width:50%">
+  <img class="mySlides1" src="Pictures/ezoo3.PNG" style="width:50%">
+  <img class="mySlides1" src="Pictures/ezoo4.PNG" style="width:50%">
+  <img class="mySlides1" src="Pictures/ezoo5.PNG" style="width:50%">
+  <img class="mySlides1" src="Pictures/ezoo6.jpg" style="width:50%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+</div>
+
+<div class="pictures">
+    <h2 class="w3-center">Electric Daisy Carnival 2018</h2>
+  <img class="mySlides2" src="Pictures/edc1.PNG" style="width:50%">
+  <img class="mySlides2" src="Pictures/edc2.PNG" style="width:50%">
+  <img class="mySlides2" src="Pictures/edc3.PNG" style="width:50%">
+  <img class="mySlides2" src="Pictures/edc4.PNG" style="width:50%">
+  <img class="mySlides2" src="Pictures/edc5.PNG" style="width:50%">
+  <img class="mySlides2" src="Pictures/edc6.PNG" style="width:50%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+    
+</body>
+</html>
