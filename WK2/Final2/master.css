@@ -168,10 +168,7 @@ h2{
     color: #eac435;
 }
 @media screen and (max-width: 715px) {
-      .logo {
-            padding: 0;
-      }
-
+    
       .nav-wrapper {
             position: fixed;
             top: 0;
